@@ -1,0 +1,27 @@
+{
+    "$schema": "https://www.schemastore.org/package.json",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite"
+    },
+    "devDependencies": {
+        "@iconify-json/hugeicons": "^1.2.23",
+        "@iconify-json/lucide": "^1.2.94",
+        "@iconify-json/ri": "^1.2.10",
+        "@iconify/tailwind4": "^1.2.1",
+        "@inertiajs/svelte": "^2.3.16",
+        "@sveltejs/vite-plugin-svelte": "^6.2.4",
+        "@tailwindcss/vite": "^4.2.1",
+        "apexcharts": "^5.6.0",
+        "choices.js": "^11.1.0",
+        "daisyui": "^5.5.19",
+        "laravel-vite-plugin": "^2.1.0",
+        "simplebar": "^6.3.3",
+        "svelte": "^5.53.5",
+        "tailwindcss": "^4.2.1",
+        "tailwindcss-motion": "^1.1.1",
+        "vite": "^7.3.1"
+    }
+}
