@@ -16,7 +16,7 @@
         },
         {
             name: "qBittorrent",
-            link: "http://192.168.0.134:8080/",
+            link: "http://192.168.0.134:8888/",
             logo: window.location.href + "qbittorrent-tray.svg"
         },
         {
