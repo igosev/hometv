@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function (RadarrService $radarrService) {
-    dd($radarrService->moveFile());
+//    dd($radarrService->moveFile());
     return Inertia::render('Home', [
 
     ]);
