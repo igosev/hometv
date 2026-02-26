@@ -1,5 +1,5 @@
 <script>
-    import {page} from "@inertiajs/svelte";
+    import {page, router} from "@inertiajs/svelte";
     import PageTitle from "../components/PageTitle.svelte";
     import MainLayout from "../layouts/MainLayout.svelte";
     import Select from "../components/Select.svelte";
@@ -8,6 +8,7 @@
     console.log($page);
 
     let paths = $derived($page.props.paths)
+    let files = $derived($page.props.files)
 
     let pathsSelect;
     let filesSelect;
@@ -23,6 +24,8 @@
             }
         }).filter(item => item)
     })
+
+
 </script>
 
 <MainLayout>
@@ -55,7 +58,12 @@
             let filesIndex = filesSelect.getSelected()
             let pathsIndex = pathsSelect.getSelected()
 
-            console.log(paths[pathsIndex]);
+
+            router.post('/move-file', {
+                file: files[filesIndex].path,
+                dir: paths[pathsIndex].path,
+                movieId: paths[pathsIndex].id
+            })
         }}>Move</button>
     </div>
 </MainLayout>

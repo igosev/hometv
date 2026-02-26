@@ -56,13 +56,16 @@ class RadarrService
         ], 'POST');
     }
 
-    public function moveFile($file = "", $dir = "", $movieId = "")
+    public function moveFile($file, $dir, $movieId)
     {
         // make a dir
         File::ensureDirectoryExists($dir, 0775);
 
+        $filename = explode("/", $file);
+        $filename = end($filename);
+
         // move file
-        File::move(env('MEDIA_DIR') . "/downloads/" . $file, $dir . "/" . $file);
+        File::move($file, $dir . "/" . $filename);
 
         // rescan
         $this->rescanMovie($movieId);
