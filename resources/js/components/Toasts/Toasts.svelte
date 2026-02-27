@@ -1,14 +1,7 @@
 <script>
     import {page} from "@inertiajs/svelte";
     import {toasts} from "./toasts.svelte.js";
-    import {onMount, untrack} from "svelte";
-
-    onMount(() => {
-        toasts.add({
-            type: "success",
-            message: "Toasts updated successfully",
-        })
-    })
+    import {untrack} from "svelte";
 
     $effect(()=>{
         if($page.flash?.message){

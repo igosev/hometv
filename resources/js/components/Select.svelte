@@ -37,10 +37,4 @@
 
 <select bind:this={selectRef} bind:value={selected} onchange={() => {console.log(selected);}}>
     <option value="">Select an option</option>
-<!--    <option value="apple">Apple</option>-->
-<!--    <option value="banana">Banana</option>-->
-<!--    <option disabled value="orange">Orange</option>-->
-<!--    <option value="carrot">Carrot</option>-->
-<!--    <option value="broccoli">Broccoli</option>-->
-<!--    <option value="spinach">Spinach</option>-->
 </select>

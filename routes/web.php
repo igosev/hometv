@@ -20,6 +20,6 @@ Route::get('/files', function (RadarrService $radarrService) {
 });
 
 Route::post('/move-file', function (Request $request, RadarrService $radarrService) {
-//    $radarrService->moveFile($request->file, $request->dir, $request->movieId);
+    $radarrService->moveFile($request->file, $request->dir, $request->movieId);
     return Inertia::flash("message", ["type" => "success", "message" => "File successfully moved"])->back();
 });
