@@ -24,6 +24,8 @@
             options,
             'value',
             'label',
+            true,
+            true,
             true
         );
     }

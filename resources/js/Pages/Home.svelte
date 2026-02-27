@@ -16,7 +16,7 @@
         },
         {
             name: "qBittorrent",
-            link: "http://steamdeck.local:8888/",
+            link: "http://steamdeck.local:8080/",
             logo: window.location.href + "qbittorrent-tray.svg"
         },
         {

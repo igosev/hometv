@@ -3,9 +3,8 @@
     import PageTitle from "../components/PageTitle.svelte";
     import MainLayout from "../layouts/MainLayout.svelte";
     import Select from "../components/Select.svelte";
-    import {onMount} from "svelte";
 
-    console.log($page);
+    $inspect($page);
 
     let paths = $derived($page.props.paths)
     let files = $derived($page.props.files)
@@ -63,6 +62,11 @@
                 file: files[filesIndex].path,
                 dir: paths[pathsIndex].path,
                 movieId: paths[pathsIndex].id
+            }, {
+                onFinish: () => {
+                    filesSelect.updateOptions();
+                    pathsSelect.updateOptions();
+                },
             })
         }}>Move</button>
     </div>

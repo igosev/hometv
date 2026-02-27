@@ -5,12 +5,14 @@
     import Topbar from "../components/admin-layout/Topbar.svelte";
     import { adminMenuItems } from "./menu";
     import ConfigProvider from "../contexts/ConfigProvider.svelte";
+    import Toasts from "../components/Toasts/Toasts.svelte";
 
     let { children } = $props();
 </script>
 
 <ConfigProvider>
     <div class="size-full">
+        <Toasts />
         <div class="flex">
             <Sidebar menuItems={adminMenuItems} />
             <div class="flex h-screen min-w-0 grow flex-col overflow-auto">
