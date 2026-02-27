@@ -20,6 +20,7 @@ Route::get('/files', function (RadarrService $radarrService) {
 });
 
 Route::post('/move-file', function (Request $request, RadarrService $radarrService) {
+    // fix permissions
     $radarrService->moveFile($request->file, $request->dir, $request->movieId);
     return back();
 });

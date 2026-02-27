@@ -6,28 +6,28 @@
     const services = [
         {
             name: "Jellyfin",
-            link: "http://192.168.0.134:8096/",
-            logo: "http://192.168.0.134:8096/web/icon-transparent.baba78f2a106d9baee83.png"
+            link: "http://steamdeck.local:8096/",
+            logo: "http://steamdeck.local:8096/web/icon-transparent.baba78f2a106d9baee83.png"
         },
         {
             name: "Tunarr",
-            link: "http://192.168.0.134:8000/",
-            logo: "http://192.168.0.134:8000/web/favicon.svg"
+            link: "http://steamdeck.local:8000/",
+            logo: "http://steamdeck.local:8000/web/favicon.svg"
         },
         {
             name: "qBittorrent",
-            link: "http://192.168.0.134:8888/",
+            link: "http://steamdeck.local:8888/",
             logo: window.location.href + "qbittorrent-tray.svg"
         },
         {
             name: "Radarr",
-            link: "http://192.168.0.134:7878/",
-            logo: "http://192.168.0.134:7878/Content/Images/logo.png"
+            link: "http://steamdeck.local:7878/",
+            logo: "http://steamdeck.local:7878/Content/Images/logo.png"
         },
         {
             name: "Sonarr",
-            link: "http://192.168.0.134:8989/",
-            logo: "http://192.168.0.134:8989/Content/Images/logo.svg"
+            link: "http://steamdeck.local:8989/",
+            logo: "http://steamdeck.local:8989/Content/Images/logo.svg"
         },
     ];
 
