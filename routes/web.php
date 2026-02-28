@@ -23,3 +23,7 @@ Route::post('/move-file', function (Request $request, RadarrService $radarrServi
     $radarrService->moveFile($request->file, $request->dir, $request->movieId);
     return Inertia::flash("message", ["type" => "success", "message" => "File successfully moved"])->back();
 });
+
+//Route::post('/delete-file', function (Request $request, RadarrService $radarrService) {
+//   //delete file
+//});

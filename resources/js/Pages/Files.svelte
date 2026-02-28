@@ -4,8 +4,9 @@
     import MainLayout from "../layouts/MainLayout.svelte";
     import Select from "../components/Select.svelte";
 
-    $inspect($page);
+    // $inspect($page);
 
+    // console.log(window.location);
     let paths = $derived($page.props.paths)
     let files = $derived($page.props.files)
 
